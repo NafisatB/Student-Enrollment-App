@@ -1,18 +1,39 @@
-# React + Vite
+# Student Course Enrollment App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that allows users to view available courses, enroll in courses, and view enrolled courses on a separate page.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View a list of available courses
+- Enroll in selected courses
+- View enrolled courses
+- Navigation between pages using React Router
 
-## React Compiler
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Component Structure
 
-Note: This will impact Vite dev & build performances.
+- App
+- Navbar
+- Home
+- Courses
+- CourseCard
+- EnrolledCourses
 
-## Expanding the ESLint configuration
+## State Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Enrolled courses state is stored in the `App` component
+- State is passed to child components using props
+- Uses `useState`
+- No Context API, Redux, or external state libraries
+
+## Technologies Used
+
+- React
+- react-router-dom
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
